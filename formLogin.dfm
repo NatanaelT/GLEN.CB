@@ -1,8 +1,8 @@
-object Form1: TForm1
+object fmLogin: TfmLogin
   Left = 0
   Top = 0
   BorderStyle = bsNone
-  Caption = 'Form1'
+  Caption = 'fmLogin'
   ClientHeight = 350
   ClientWidth = 600
   Color = clBtnFace
@@ -320,6 +320,7 @@ object Form1: TForm1
     Height = 25
     Caption = 'Entrar'
     TabOrder = 2
+    OnClick = btnEntrarClick
   end
   object btnFechar: TBitBtn
     Left = 297

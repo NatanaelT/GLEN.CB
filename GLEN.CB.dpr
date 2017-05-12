@@ -2,13 +2,15 @@ program GLEN.CB;
 
 uses
   Vcl.Forms,
-  formLogin in 'formLogin.pas' {Form1};
+  formLogin in 'formLogin.pas' {fmLogin},
+  formPrincipal in 'formPrincipal.pas' {fmPrincipal};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfmLogin, fmLogin);
+  Application.CreateForm(TfmPrincipal, fmPrincipal);
   Application.Run;
 end.

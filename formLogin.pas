@@ -8,7 +8,7 @@ uses
   Vcl.Imaging.pngimage, Vcl.ExtCtrls;
 
 type
-  TForm1 = class(TForm)
+  TfmLogin = class(TForm)
     edtUsuario: TEdit;
     edtSenha: TEdit;
     btnEntrar: TBitBtn;
@@ -17,6 +17,7 @@ type
     lblSenha: TLabel;
     imgUser: TImage;
     procedure btnFecharClick(Sender: TObject);
+    procedure btnEntrarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -24,13 +25,21 @@ type
   end;
 
 var
-  Form1: TForm1;
+  fmLogin: TfmLogin;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm1.btnFecharClick(Sender: TObject);
+uses formPrincipal;
+
+procedure TfmLogin.btnEntrarClick(Sender: TObject);
+begin
+  fmPrincipal.Show;
+
+end;
+
+procedure TfmLogin.btnFecharClick(Sender: TObject);
 begin
   MessageDlg('O sistema será fechado',mtConfirmation,[mbOK],0);
   application.Terminate;
