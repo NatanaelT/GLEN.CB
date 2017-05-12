@@ -1,10 +1,9 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  BorderStyle = bsNone
   Caption = 'Form1'
-  ClientHeight = 350
-  ClientWidth = 600
+  ClientHeight = 323
+  ClientWidth = 516
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,8 +15,8 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object lblUsuario: TLabel
-    Left = 216
-    Top = 160
+    Left = 135
+    Top = 165
     Width = 52
     Height = 19
     Caption = 'Usu'#225'rio'
@@ -29,8 +28,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object lblSenha: TLabel
-    Left = 216
-    Top = 212
+    Left = 146
+    Top = 207
     Width = 41
     Height = 19
     Caption = 'Senha'
@@ -42,7 +41,7 @@ object Form1: TForm1
     ParentFont = False
   end
   object imgUser: TImage
-    Left = 240
+    Left = 224
     Top = 31
     Width = 132
     Height = 137
@@ -299,22 +298,22 @@ object Form1: TForm1
       F74CE1FF01D99029186A58294A0000000049454E44AE426082}
   end
   object edtUsuario: TEdit
-    Left = 216
-    Top = 185
+    Left = 200
+    Top = 166
     Width = 156
     Height = 21
     TabOrder = 0
   end
   object edtSenha: TEdit
-    Left = 216
-    Top = 237
+    Left = 200
+    Top = 208
     Width = 156
     Height = 21
     PasswordChar = '*'
     TabOrder = 1
   end
   object btnEntrar: TBitBtn
-    Left = 216
+    Left = 200
     Top = 264
     Width = 75
     Height = 25
@@ -322,7 +321,7 @@ object Form1: TForm1
     TabOrder = 2
   end
   object btnFechar: TBitBtn
-    Left = 297
+    Left = 281
     Top = 264
     Width = 75
     Height = 25
