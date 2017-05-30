@@ -319,6 +319,7 @@ object fmLogin: TfmLogin
     Width = 75
     Height = 25
     Caption = 'Entrar'
+    Default = True
     TabOrder = 2
     OnClick = btnEntrarClick
   end

@@ -18,8 +18,7 @@ type
     imgUser: TImage;
     procedure btnFecharClick(Sender: TObject);
     procedure btnEntrarClick(Sender: TObject);
-  private
-    { Private declarations }
+    private tentativas: Smallint;
   public
     { Public declarations }
   end;
@@ -34,8 +33,72 @@ implementation
 uses formPrincipal;
 
 procedure TfmLogin.btnEntrarClick(Sender: TObject);
-begin
-  fmPrincipal.Show;
+ begin
+
+   if (edtUsuario.Text = '') then //Verifica se o campo "Usuário" foi preenchido
+
+   begin
+
+      Messagedlg('O campo "Usuário" deve ser preenchido!', mtInformation, [mbOk], 0);
+
+      if edtUsuario.CanFocus then
+
+         edtUsuario.SetFocus;
+
+      Exit;
+
+   end;
+
+   if (edtSenha.Text = '') then //Verifica se o campo "Senha" foi preenchido
+
+   begin
+
+      Messagedlg('O campo "Senha" deve ser preenchido!', mtInformation, [mbOk], 0);
+
+      if edtSenha.CanFocus then
+
+         edtSenha.SetFocus;
+
+      Exit;
+
+   end;
+
+   if (edtUsuario.Text = 'Leonardo') and (edtSenha.Text = '265891') then
+   begin
+     fmPrincipal.Show;
+   end
+
+   else
+
+   begin
+
+      inc(tentativas); //Incrementa em 1 o valor da variável tentativas
+
+      if tentativas < 3 then
+
+      begin
+
+         MessageDlg(Format('Tentativa %d de 3', [tentativas]), mtError, [mbOk], 0);
+
+         if edtSenha.CanFocus then
+
+            edtSenha.SetFocus;
+
+      end
+
+      else
+
+      begin
+
+         MessageDlg(Format('%dª tentativa de acesso ao sistema.',
+
+            [tentativas]) + #13 + 'A aplicação será fechada!', mtError, [mbOk], 0);
+
+         application.Terminate;;
+
+      end;
+
+   end;
 
 end;
 
