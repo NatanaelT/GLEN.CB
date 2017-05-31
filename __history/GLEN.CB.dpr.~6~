@@ -4,7 +4,7 @@ uses
   Vcl.Forms,
   formLogin in 'formLogin.pas' {fmLogin},
   formPrincipal in 'formPrincipal.pas' {fmPrincipal},
-  formCadastroUsuario in 'formCadastroUsuario.pas' {fmCadastroUsuario};
+  formCadastroUsuario in 'formCadastroUsuario.pas' {Form1};
 
 {$R *.res}
 
@@ -13,6 +13,6 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TfmLogin, fmLogin);
   Application.CreateForm(TfmPrincipal, fmPrincipal);
-  Application.CreateForm(TfmCadastroUsuario, fmCadastroUsuario);
+  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
