@@ -63,7 +63,7 @@ procedure TfmLogin.btnEntrarClick(Sender: TObject);
 
    end;
 
-   if (edtUsuario.Text = 'Leonardo') and (edtSenha.Text = '265891') then
+   if (edtUsuario.Text = 'leonardo') and (edtSenha.Text = 'abc123') then
    begin
      fmPrincipal.Show;
    end

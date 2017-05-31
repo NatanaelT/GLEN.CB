@@ -1,0 +1,31 @@
+object frmAluguelsala: TfrmAluguelsala
+  Left = 0
+  Top = 0
+  Caption = 'Aluguel de Sala'
+  ClientHeight = 492
+  ClientWidth = 550
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 8
+    Top = 8
+    Width = 74
+    Height = 13
+    Caption = 'N'#250'mero da sala'
+  end
+  object Edit1: TEdit
+    Left = 88
+    Top = 8
+    Width = 121
+    Height = 13
+    TabOrder = 0
+    Text = 'Edit1'
+  end
+end
