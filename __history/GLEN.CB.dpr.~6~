@@ -4,7 +4,11 @@ uses
   Vcl.Forms,
   formLogin in 'formLogin.pas' {fmLogin},
   formPrincipal in 'formPrincipal.pas' {fmPrincipal},
+<<<<<<< HEAD
   formAluguelsala in 'formAluguelsala.pas' {Form1};
+=======
+  formCadastroUsuario in 'formCadastroUsuario.pas' {Form1};
+>>>>>>> 8bbdc2d06d1691bb0a45a3715b560c5dc6686fa3
 
 {$R *.res}
 
