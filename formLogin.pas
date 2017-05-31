@@ -68,7 +68,7 @@ procedure TfmLogin.btnEntrarClick(Sender: TObject);
      fmPrincipal.Show;
    end
 
-   else
+   else  //teste
 
    begin
 

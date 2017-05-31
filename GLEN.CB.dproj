@@ -101,12 +101,17 @@
             <FormType>dfm</FormType>
         </DCCReference>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <DCCReference Include="formAluguelsala.pas">
             <Form>frmAluguelsala</Form>
 =======
         <DCCReference Include="formCadastroUsuario.pas">
             <Form>fmCadastroUsuario</Form>
 >>>>>>> 8bbdc2d06d1691bb0a45a3715b560c5dc6686fa3
+=======
+        <DCCReference Include="formCadastroUsuario.pas">
+            <Form>fmCadastroUsuario</Form>
+>>>>>>> 5fe6ffee05886a7c902a411fd138de2ca4754250
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

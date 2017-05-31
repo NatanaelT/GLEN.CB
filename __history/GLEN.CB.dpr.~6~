@@ -5,10 +5,14 @@ uses
   formLogin in 'formLogin.pas' {fmLogin},
   formPrincipal in 'formPrincipal.pas' {fmPrincipal},
 <<<<<<< HEAD
+<<<<<<< HEAD
   formAluguelsala in 'formAluguelsala.pas' {Form1};
 =======
   formCadastroUsuario in 'formCadastroUsuario.pas' {Form1};
 >>>>>>> 8bbdc2d06d1691bb0a45a3715b560c5dc6686fa3
+=======
+  formCadastroUsuario in 'formCadastroUsuario.pas' {Form1};
+>>>>>>> 5fe6ffee05886a7c902a411fd138de2ca4754250
 
 {$R *.res}
 
