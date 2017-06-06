@@ -30,12 +30,13 @@ implementation
 
 {$R *.dfm}
 
-uses formPrincipal;
+uses formPrincipal, uDataModule;
 
 procedure TfmLogin.btnEntrarClick(Sender: TObject);
  begin
 
    if (edtUsuario.Text = '') then //Verifica se o campo "Usuário" foi preenchido
+ //  if edtUsuario.Text :=  then
 
    begin
 
@@ -63,12 +64,12 @@ procedure TfmLogin.btnEntrarClick(Sender: TObject);
 
    end;
 
-   if (edtUsuario.Text = 'leonardo') and (edtSenha.Text = 'abc123') then
+   if (edtUsuario.Text = 'Leonardo') and (edtSenha.Text = '265891') then
    begin
      fmPrincipal.Show;
    end
 
-   else  //teste
+   else
 
    begin
 

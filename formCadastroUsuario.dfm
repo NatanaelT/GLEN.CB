@@ -87,4 +87,13 @@ object fmCadastroUsuario: TfmCadastroUsuario
     Caption = 'Cadastrar'
     TabOrder = 5
   end
+  object DBEdit1: TDBEdit
+    Left = 280
+    Top = 192
+    Width = 121
+    Height = 21
+    DataField = 'NOME_USUARIO'
+    DataSource = DataModule1.dsUsuario
+    TabOrder = 6
+  end
 end
