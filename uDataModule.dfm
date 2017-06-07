@@ -4,15 +4,12 @@ object DataModule1: TDataModule1
   Width = 443
   object FDconexao: TFDConnection
     Params.Strings = (
-      
-        'Database=C:\Users\bianca hahn\Documents\PROJETO ENG SOFTWARE III' +
-        '\GLEN.CB\DB\LOCACAO.FDB'
+      'Database=d:\Users\hp\Documents\GitHub\GLEN.CB\DB\LOCACAO.FDB'
       'User_Name=SYSDBA'
       'Password=masterkey'
       'Server=localhost'
       'CharacterSet=UTF8'
       'DriverID=FB')
-    Connected = True
     LoginPrompt = False
     Left = 96
     Top = 48

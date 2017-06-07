@@ -2,8 +2,8 @@ object frmAluguelsala: TfrmAluguelsala
   Left = 0
   Top = 0
   Caption = 'Aluguel de Sala'
-  ClientHeight = 492
-  ClientWidth = 550
+  ClientHeight = 471
+  ClientWidth = 578
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,133 +14,76 @@ object frmAluguelsala: TfrmAluguelsala
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 8
-    Top = 11
-    Width = 103
-    Height = 18
-    Caption = 'N'#250'mero da sala'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
+    Left = 10
+    Top = 8
+    Width = 45
+    Height = 13
+    Caption = 'N Da sala'
   end
   object Label2: TLabel
-    Left = 8
-    Top = 49
-    Width = 31
-    Height = 18
-    Caption = 'Data'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
+    Left = 184
+    Top = 109
+    Width = 175
+    Height = 13
+    Caption = 'Equipamentos vinculados a esta sala'
   end
   object Label3: TLabel
-    Left = 172
-    Top = 49
-    Width = 31
-    Height = 18
+    Left = 120
+    Top = 43
+    Width = 23
+    Height = 13
     Caption = 'Hora'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object btnConsulta: TSpeedButton
-    Left = 239
-    Top = 8
-    Width = 106
-    Height = 21
-    Caption = 'Consultar Salas'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
   end
   object Label4: TLabel
-    Left = 172
-    Top = 120
-    Width = 182
-    Height = 18
-    Caption = 'Equipamentos fixos na sala:'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object txtNumsala: TEdit
-    Left = 117
-    Top = 8
-    Width = 121
-    Height = 21
-    AutoSize = False
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 0
-  end
-  object txtData: TEdit
-    Left = 45
-    Top = 49
-    Width = 121
-    Height = 18
-    AutoSize = False
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 1
-    StyleElements = [seFont, seClient]
-  end
-  object txtHora: TEdit
-    Left = 209
-    Top = 49
-    Width = 121
-    Height = 18
-    AutoSize = False
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 2
-  end
-  object ListBox1: TListBox
     Left = 8
-    Top = 144
-    Width = 534
-    Height = 345
-    ItemHeight = 13
-    TabOrder = 3
+    Top = 43
+    Width = 23
+    Height = 13
+    Caption = 'Data'
   end
   object Button1: TButton
     Left = 8
-    Top = 80
-    Width = 534
-    Height = 34
-    Caption = 'Confirmar Aluguel'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
+    Top = 75
+    Width = 562
+    Height = 25
+    Caption = 'Alguar a sala selecionada!'
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 128
+    Top = 1
+    Width = 75
+    Height = 25
+    Caption = 'Consultar'
+    TabOrder = 1
+  end
+  object ListBox1: TListBox
+    Left = 8
+    Top = 128
+    Width = 562
+    Height = 335
+    ItemHeight = 13
+    TabOrder = 2
+  end
+  object Edit1: TEdit
+    Left = 61
+    Top = 3
+    Width = 61
+    Height = 21
+    TabOrder = 3
+  end
+  object Edit2: TEdit
+    Left = 157
+    Top = 40
+    Width = 61
+    Height = 21
     TabOrder = 4
+  end
+  object Edit3: TEdit
+    Left = 37
+    Top = 40
+    Width = 61
+    Height = 21
+    TabOrder = 5
   end
 end

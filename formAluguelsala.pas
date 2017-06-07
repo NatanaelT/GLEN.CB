@@ -4,20 +4,20 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
   TfrmAluguelsala = class(TForm)
-    Label1: TLabel;
-    txtNumsala: TEdit;
-    Label2: TLabel;
-    txtData: TEdit;
-    Label3: TLabel;
-    txtHora: TEdit;
-    btnConsulta: TSpeedButton;
-    ListBox1: TListBox;
     Button1: TButton;
+    Button2: TButton;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
     Label4: TLabel;
+    ListBox1: TListBox;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
   private
     { Private declarations }
   public
@@ -30,7 +30,5 @@ var
 implementation
 
 {$R *.dfm}
-
-uses formPrincipal;
 
 end.
